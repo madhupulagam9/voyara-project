@@ -1,170 +1,1031 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Voyara - Travel for Peace Not for Satisfaction</title>
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="style.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>
+        VOYARA
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
 
+
 <body>
 
-<div class="sidebar">
 
-<div class="logo">
-<i class="fa-solid fa-ticket"></i> Voyara
-</div>
+    <!-- ==================== NAVBAR ==================== -->
 
-<ul>
+    <header class="navbar">
 
-<li>
-<a href="index.html">
-<i class="fa-solid fa-house"></i>
-<span>Home</span>
-</a>
-</li>
+        <div
+            class="logo"
+            onclick="goHome()"
+        >
 
-<li>
-<a href="login.html">
-<i class="fa-solid fa-right-to-bracket"></i>
-<span>Login</span>
-</a>
-</li>
+            VOYARA
 
-<li>
-<a href="signup.html">
-<i class="fa-solid fa-user-plus"></i>
-<span>Signup</span>
-</a>
-</li>
+            <span>
+                travel for Peace Not for satisfaction
+            </span>
 
-<li>
-<a href="dashboard.html">
-<i class="fa-solid fa-chart-line"></i>
-<span>Dashboard</span>
-</a>
-</li>
+        </div>
 
-</ul>
 
-</div>
+        <nav>
 
-<div class="main">
+            <a href="#home">
+                Home
+            </a>
 
-<section class="hero glass">
+            <a href="#destinations">
+                Destinations
+            </a>
 
-<div class="hero-content">
+            <a href="#services">
+                Services
+            </a>
 
-<h1>
-Travel For Peace,
-<span>Not For Satisfaction</span>
-</h1>
+            <a href="#offers">
+                Offers
+            </a>
 
-<p>
-Book Flights, Trains, Buses and Movie Tickets in one place.
-Fast, Secure and Premium Booking Experience.
-</p>
+        </nav>
 
-<div class="hero-buttons">
 
-<a href="login.html">
-<button class="btn">
-Get Started
-</button>
-</a>
+        <div class="nav-right">
 
-<a href="signup.html">
-<button class="btn secondary-btn">
-Create Account
-</button>
-</a>
+            <select>
 
-</div>
+                <option>
+                    ₹ INR
+                </option>
 
-</div>
+                <option>
+                    $ USD
+                </option>
 
-<div class="hero-image">
+            </select>
 
-<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200"
-alt="Travel">
 
-</div>
+            <button
+                class="login-btn"
+                onclick="openLogin()"
+            >
+                Login
+            </button>
 
-</section>
+        </div>
 
-<section class="features">
+    </header>
 
-<div class="card glass">
-<i class="fa-solid fa-plane"></i>
-<h3>Flight Booking</h3>
-<p>Book domestic and international flights instantly.</p>
-</div>
 
-<div class="card glass">
-<i class="fa-solid fa-train"></i>
-<h3>Train Booking</h3>
-<p>Reserve train tickets with live availability.</p>
-</div>
 
-<div class="card glass">
-<i class="fa-solid fa-bus"></i>
-<h3>Bus Booking</h3>
-<p>Find buses across thousands of routes.</p>
-</div>
+    <!-- ==================== HERO SECTION ==================== -->
 
-<div class="card glass">
-<i class="fa-solid fa-film"></i>
-<h3>Movie Tickets</h3>
-<p>Book movie tickets from nearby theatres.</p>
-</div>
+    <section
+        id="home"
+        class="hero"
+    >
 
-</section>
+        <div class="hero-content">
 
-<section class="stats">
+            <p class="small-title">
+                YOUR JOURNEY STARTS HERE
+            </p>
 
-<div class="stat-box glass">
-<h2>50K+</h2>
-<p>Bookings</p>
-</div>
 
-<div class="stat-box glass">
-<h2>10K+</h2>
-<p>Happy Users</p>
-</div>
+            <h1>
 
-<div class="stat-box glass">
-<h2>150+</h2>
-<p>Cities Covered</p>
-</div>
+                Travel More.
 
-<div class="stat-box glass">
-<h2>99%</h2>
-<p>Success Rate</p>
-</div>
+                <br>
 
-</section>
+                <span>
+                    Live More.
+                </span>
 
-<footer class="glass footer">
+            </h1>
 
-<h3>Voyara</h3>
 
-<p>
-Premium Online Ticket Booking Platform
-</p>
+            <p class="hero-text">
 
-<p>
-© 2026 Voyara. All Rights Reserved.
-</p>
+                Discover destinations, book flights,
+                hotels, trains, buses, cabs and
+                unforgettable experiences with VOYARA.
 
-</footer>
+            </p>
 
-</div>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="primary-btn"
+                    onclick="scrollToServices()"
+                >
+                    Explore Travel
+                </button>
+
+
+                <button
+                    class="secondary-btn"
+                    onclick="openLogin()"
+                >
+                    Login / Signup
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="travel-circle">
+                VOYARA
+            </div>
+
+
+            <div class="floating-card">
+
+                ✈️
+
+                <div>
+
+                    <b>
+                        Next Adventure
+                    </b>
+
+                    <p>
+                        Goa, India
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== SEARCH BOX ==================== -->
+
+    <section class="search-box">
+
+
+        <div class="search-tabs">
+
+            <button
+                class="active"
+                onclick="selectTravelType(this, 'Flights')"
+            >
+                ✈ Flights
+            </button>
+
+
+            <button
+                onclick="selectTravelType(this, 'Hotels')"
+            >
+                🏨 Hotels
+            </button>
+
+
+            <button
+                onclick="selectTravelType(this, 'Trains')"
+            >
+                🚆 Trains
+            </button>
+
+
+            <button
+                onclick="selectTravelType(this, 'Buses')"
+            >
+                🚌 Buses
+            </button>
+
+
+            <button
+                onclick="selectTravelType(this, 'Cabs')"
+            >
+                🚕 Cabs
+            </button>
+
+        </div>
+
+
+        <div class="search-fields">
+
+
+            <div class="field">
+
+                <label>
+                    FROM
+                </label>
+
+                <input
+                    id="from"
+                    placeholder="Departure"
+                >
+
+            </div>
+
+
+            <div
+                class="swap"
+                onclick="swapLocations()"
+            >
+                ⇄
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    TO
+                </label>
+
+                <input
+                    id="to"
+                    placeholder="Destination"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    DATE
+                </label>
+
+                <input
+                    id="date"
+                    type="date"
+                >
+
+            </div>
+
+
+            <button
+                class="search-btn"
+                onclick="searchTravel()"
+            >
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== SERVICES ==================== -->
+
+    <section
+        id="services"
+        class="section"
+    >
+
+
+        <div class="section-heading">
+
+            <p>
+                TRAVEL SERVICES
+            </p>
+
+            <h2>
+                Everything you need
+            </h2>
+
+            <span>
+                One platform. Every journey.
+            </span>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <div
+                class="service-card"
+                onclick="openService('Flights')"
+            >
+
+                <div class="service-icon">
+                    ✈️
+                </div>
+
+                <h3>
+                    Flights
+                </h3>
+
+                <p>
+                    Domestic & international flights
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+
+            <div
+                class="service-card"
+                onclick="openService('Hotels')"
+            >
+
+                <div class="service-icon">
+                    🏨
+                </div>
+
+                <h3>
+                    Hotels
+                </h3>
+
+                <p>
+                    Beautiful stays
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+
+            <div
+                class="service-card"
+                onclick="openService('Trains')"
+            >
+
+                <div class="service-icon">
+                    🚆
+                </div>
+
+                <h3>
+                    Trains
+                </h3>
+
+                <p>
+                    Book train journeys
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+
+            <div
+                class="service-card"
+                onclick="openService('Buses')"
+            >
+
+                <div class="service-icon">
+                    🚌
+                </div>
+
+                <h3>
+                    Buses
+                </h3>
+
+                <p>
+                    Comfortable bus travel
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+
+            <div
+                class="service-card"
+                onclick="openService('Cabs')"
+            >
+
+                <div class="service-icon">
+                    🚕
+                </div>
+
+                <h3>
+                    Cabs
+                </h3>
+
+                <p>
+                    City and airport rides
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+
+            <div
+                class="service-card"
+                onclick="openService('Cars')"
+            >
+
+                <div class="service-icon">
+                    🚘
+                </div>
+
+                <h3>
+                    Car Rentals
+                </h3>
+
+                <p>
+                    Rent cars by day
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+
+            <div
+                class="service-card"
+                onclick="openService('Packages')"
+            >
+
+                <div class="service-icon">
+                    🌴
+                </div>
+
+                <h3>
+                    Holiday Packages
+                </h3>
+
+                <p>
+                    Complete travel packages
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+
+            <div
+                class="service-card"
+                onclick="openService('Activities')"
+            >
+
+                <div class="service-icon">
+                    🎡
+                </div>
+
+                <h3>
+                    Activities
+                </h3>
+
+                <p>
+                    Experiences and adventures
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== DESTINATIONS ==================== -->
+
+    <section
+        id="destinations"
+        class="section destination-section"
+    >
+
+
+        <div class="section-heading">
+
+            <p>
+                EXPLORE THE WORLD
+            </p>
+
+            <h2>
+                Popular destinations
+            </h2>
+
+            <span>
+                Find your next beautiful escape.
+            </span>
+
+        </div>
+
+
+        <div class="destination-grid">
+
+
+            <!-- GOA -->
+
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=80"
+                >
+
+
+                <div class="destination-info">
+
+                    <h3>
+                        Goa
+                    </h3>
+
+                    <p>
+                        India
+                    </p>
+
+                    <strong>
+                        ₹8,999 / $94.73
+                    </strong>
+
+
+                    <button
+                        onclick="bookDestination('Goa', 8999)"
+                    >
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DUBAI -->
+
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=80"
+                >
+
+
+                <div class="destination-info">
+
+                    <h3>
+                        Dubai
+                    </h3>
+
+                    <p>
+                        UAE
+                    </p>
+
+                    <strong>
+                        ₹24,999 / $263.15
+                    </strong>
+
+
+                    <button
+                        onclick="bookDestination('Dubai', 24999)"
+                    >
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KASHMIR -->
+
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=80"
+                >
+
+
+                <div class="destination-info">
+
+                    <h3>
+                        Kashmir
+                    </h3>
+
+                    <p>
+                        India
+                    </p>
+
+                    <strong>
+                        ₹12,999 / $136.83
+                    </strong>
+
+
+                    <button
+                        onclick="bookDestination('Kashmir', 12999)"
+                    >
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BALI -->
+
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                >
+
+
+                <div class="destination-info">
+
+                    <h3>
+                        Bali
+                    </h3>
+
+                    <p>
+                        Indonesia
+                    </p>
+
+                    <strong>
+                        ₹39,999 / $421.04
+                    </strong>
+
+
+                    <button
+                        onclick="bookDestination('Bali', 39999)"
+                    >
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== OFFERS ==================== -->
+
+    <section class="offers-section">
+
+
+        <div>
+
+            <p>
+                EXCLUSIVE DEAL
+            </p>
+
+            <h2>
+
+                Travel more.
+
+                <br>
+
+                Pay less.
+
+            </h2>
+
+            <span>
+                Special discounts on your next journey.
+            </span>
+
+            <br>
+            <br>
+
+
+            <button
+                class="primary-btn"
+                onclick="claimOffer()"
+            >
+                Claim Offer
+            </button>
+
+        </div>
+
+
+        <div class="offer-code">
+
+            <span>
+                USE CODE
+            </span>
+
+            <strong>
+                VOYARA500
+            </strong>
+
+            <small>
+                Get ₹500 OFF
+            </small>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <h2>
+                VOYARA
+            </h2>
+
+            <p>
+                travel for Peace Not for satisfaction
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                Travel
+            </h4>
+
+
+            <a onclick="openService('Flights')">
+                Flights
+            </a>
+
+            <a onclick="openService('Hotels')">
+                Hotels
+            </a>
+
+            <a onclick="openService('Trains')">
+                Trains
+            </a>
+
+            <a onclick="openService('Buses')">
+                Buses
+            </a>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                Account
+            </h4>
+
+
+            <a onclick="openLogin()">
+                Login
+            </a>
+
+            <a onclick="openSignup()">
+                Signup
+            </a>
+
+            <a onclick="showBookings()">
+                My Bookings
+            </a>
+
+            <a onclick="showSupport()">
+                Support
+            </a>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                VOYARA
+            </h4>
+
+
+            <a onclick="showWallet()">
+                Wallet
+            </a>
+
+            <a onclick="showRewards()">
+                Pearls
+            </a>
+
+            <a onclick="showProfile()">
+                Profile
+            </a>
+
+            <a onclick="showSettings()">
+                Settings
+            </a>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- ==================== LOGIN MODAL ==================== -->
+
+    <div
+        id="loginModal"
+        class="modal"
+    >
+
+
+        <div class="modal-card">
+
+
+            <button
+                class="close"
+                onclick="closeLogin()"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-logo">
+                VOYARA
+            </div>
+
+
+            <p class="modal-tagline">
+                travel for Peace Not for satisfaction
+            </p>
+
+
+            <h2>
+                Welcome back
+            </h2>
+
+
+            <p>
+                Login to continue.
+            </p>
+
+
+            <input
+                id="loginEmail"
+                type="email"
+                placeholder="Email"
+            >
+
+
+            <input
+                id="loginPassword"
+                type="password"
+                placeholder="Password"
+            >
+
+
+            <button
+                class="full-btn"
+                onclick="login()"
+            >
+                Login
+            </button>
+
+
+            <p class="signup-text">
+
+                Don't have an account?
+
+                <span onclick="openSignup()">
+                    Create account
+                </span>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================== SIGNUP MODAL ==================== -->
+
+    <div
+        id="signupModal"
+        class="modal"
+    >
+
+
+        <div class="modal-card">
+
+
+            <button
+                class="close"
+                onclick="closeSignup()"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-logo">
+                VOYARA
+            </div>
+
+
+            <p class="modal-tagline">
+                travel for Peace Not for satisfaction
+            </p>
+
+
+            <h2>
+                Create account
+            </h2>
+
+
+            <input
+                id="signupName"
+                placeholder="Full name"
+            >
+
+
+            <input
+                id="signupEmail"
+                type="email"
+                placeholder="Email"
+            >
+
+
+            <input
+                id="signupPassword"
+                type="password"
+                placeholder="Password"
+            >
+
+
+            <button
+                class="full-btn"
+                onclick="signup()"
+            >
+                Create Account
+            </button>
+
+
+            <p class="signup-text">
+
+                Already have an account?
+
+                <span onclick="openLogin()">
+                    Login
+                </span>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+    <script src="script.js"></script>
+
 
 </body>
+
 </html>
