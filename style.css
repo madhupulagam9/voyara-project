@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    color:white;
+    min-height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:250px;
+    height:100vh;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border-right:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    overflow-y:auto;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#60a5fa;
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin-bottom:10px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.sidebar ul li a:hover{
+    background:rgba(255,255,255,0.08);
+}
+
+/* Main */
+
+.main{
+    margin-left:270px;
+    padding:30px;
+}
+
+/* Glass Effect */
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+
+/* Button */
+
+.btn{
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Forms */
+
+.form-container{
+    max-width:500px;
+    margin:auto;
+    padding:30px;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    background:rgba(255,255,255,0.08);
+    color:white;
+}
+
+.input-group input::placeholder,
+textarea::placeholder{
+    color:#cbd5e1;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    padding:25px;
+    text-align:center;
+}
+
+.card i{
+    font-size:40px;
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+/* Hero */
+
+.hero{
+    padding:50px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    opacity:0.8;
+}
+
+/* Tables */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    padding:15px;
+    text-align:left;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+table th{
+    color:#60a5fa;
+}
+
+/* Seat Selection */
+
+.seat{
+    width:70px;
+    height:70px;
+    border-radius:12px;
+    background:#1e293b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.seat:hover{
+    transform:scale(1.05);
+}
+
+.selected{
+    background:#2563eb;
+}
+
+.booked{
+    background:#ef4444;
+}
+
+/* Profile */
+
+.profile-avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:50px;
+}
+
+/* Status */
+
+.status{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.confirmed{
+    background:#22c55e;
+}
+
+.pending{
+    background:#f59e0b;
+}
+
+.cancelled{
+    background:#ef4444;
+}
+
+/* Success Page */
+
+.success-icon{
+    font-size:100px;
+    color:#22c55e;
+}
+
+/* Search Grid */
+
+.search-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.sidebar{
+    width:80px;
+}
+
+.sidebar span{
+    display:none;
+}
+
+.logo{
+    font-size:18px;
+}
+
+.main{
+    margin-left:90px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.search-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:480px){
+
+.main{
+    padding:15px;
+}
+
+.btn{
+    width:100%;
+}
+
+}
